@@ -1,0 +1,2 @@
+class CoLevel < SensorReading
+end

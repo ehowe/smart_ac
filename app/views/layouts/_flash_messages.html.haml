@@ -1,0 +1,5 @@
+#flash_messages
+  - flash.each do |key, value|
+    %div.alert{class: bootstrap_class_for(key), style: "margin-bottom: 0"}
+      %button.close{"data-dismiss" => "alert"}×
+      = value

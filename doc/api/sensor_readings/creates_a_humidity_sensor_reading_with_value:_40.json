@@ -1,0 +1,68 @@
+{
+  "resource": "Sensor Readings",
+  "resource_explanation": "Devices will use this endpoint to upload sensor data",
+  "http_method": "POST",
+  "route": "/api/sensor_readings",
+  "description": "Creates a Humidity sensor reading with value: 40",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "type",
+      "description": "Sensor reading type.  Must be one of CoLevel, Humidity, Temperature, or UnitHealth"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "value",
+      "description": "Sensor value"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "read_at",
+      "description": "Timestamp of the sensor reading"
+    },
+    {
+      "required": true,
+      "name": "device",
+      "description": "Id of the device reporting the sensor reading"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/sensor_readings",
+      "request_body": "device=3a3c974d-992b-4da2-b5b5-df632399a387&sensor_reading[type]=Humidity&sensor_reading[value]=40&sensor_reading[read_at]=2018-02-01+10%3A58%3A34+-0500",
+      "request_headers": {
+        "Authorization": "Token xxTSkSiMAWFEEkDu+D07Oq11Qbr58SZXj6mM9y4nCxO/+te40fP2sR319wguOhBFr2d1zKgWQsZFmQ/UAjaXl5MFKZ318GXuj7jpOIEovjEtOqD16H1lIOa6foJxLYsqsV33M05YpDBg9QqlByOQRk0JwPmALnMf0F0AZk2fO/r4ug3MowbZN+JV0si8PMh/WHxoZO+3y+j8aOlXlFU3W7QZDtgxN2uWwbLLQo9x9XlroURpMSXnIsSif6FAQmrpFvbIj2Nt/spXxEC2jrGOYLhYMzaXrkyuheky6ORnmxnbl63tM6Kr/ud9kHqNo2UgI+p3Pu+Hw9l/w8+XpUFkx9/08OQRb/WyMEf5ywSCQoe4FCVGhsZ49HOBkuCF4Q2IQA9LU2zMeEOvSNJb3SYfyzbD2a9w3hw7NywCw8E9lOBKfUZhpf3cV0BNrX9HAkuh6YdNKzOgDa5Cskvq4clHqlLgyl4HO77ZF5ijHOyWBUyPmSSuF3cqCNrV1Hz/dFjg4PtKMlUnJP/Esm9AmRPos3SrXYoY6tbDQJK+/7uqxjKtUvnskeTcl920t+gqxsVRYuET3RUeQZqYBiAd5mPCIRWt1LVIwot7s6KSVQoNMMmkirSzni4+Egla8//6AJUIco8Zh5Armc3lcM0BM6y0csKyqFMS53AueR9yte4Gu+E=",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"a3ecb6e0-2bfb-4694-9863-3932e04baf1c\",\n  \"type\": \"Humidity\",\n  \"value\": \"40\",\n  \"read_at\": \"2018-02-01T15:58:34.000Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"f859a089861bd9c60704f1c44f8d6688\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "b33347ae-b69b-4fed-91e0-8243d0f21e08",
+        "X-Runtime": "0.036079",
+        "Content-Length": "113"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

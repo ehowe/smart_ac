@@ -1,0 +1,68 @@
+{
+  "resource": "Sensor Readings",
+  "resource_explanation": "Devices will use this endpoint to upload sensor data",
+  "http_method": "POST",
+  "route": "/api/sensor_readings",
+  "description": "Creates a Temperature sensor reading with value: 30",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "type",
+      "description": "Sensor reading type.  Must be one of CoLevel, Humidity, Temperature, or UnitHealth"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "value",
+      "description": "Sensor value"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "read_at",
+      "description": "Timestamp of the sensor reading"
+    },
+    {
+      "required": true,
+      "name": "device",
+      "description": "Id of the device reporting the sensor reading"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/sensor_readings",
+      "request_body": "device=2869c286-ebb0-4adc-a6bf-eec19b30f815&sensor_reading[type]=Temperature&sensor_reading[value]=30&sensor_reading[read_at]=2018-02-01+10%3A58%3A34+-0500",
+      "request_headers": {
+        "Authorization": "Token LHcsa/yPUdIwrukX2TuDa1McpcImAPeK0C/X+vUDLJKzJy5GyW0Q79eD/HlFgAZ/V7bomFnCnjmAsSRWm1cdeRMHcbJ/M5gWa330qXy5RRc1h0AVMsigLc31AnPIaXHGsh0z5DvZiyOnbI0yAZLKq04zX3vymVIs0CtIrzDWCVKAcfG1+kqgFOGD0Ze2dOvRrxJ4MnpWioyFLf5tOMXk+UxUlShQTxXbiZlgd7Eo08afVEPrFNjvgWMvWgHuyFKPOq8nbWbZdSOPBGY3B5pbhoIKIHKxy51hCYKrCdQz9FATYl44mrO+kqgAYLbBEfi6Pz0LgoWM2QuYibOlKZ5BnbMpnrTQTEcpGbKTXOOWrcjQOulw79U34h1Qauwyf45VW5C4kXQDIbdB9RAVAeptHbNbE1bs8pyQmNCA0M8WQOdO0iWjChGwv3TDKdCqy252/zfg/4wki5Xn6YxoaF1qSSdlTWh4RjDBbx2qWNLcdCYdko5wjU7J4EnRLYJ/RZBuZ+RcCUo7seyw8dBNppAF9A6iiSqA9KQLYeqK+JGNVRjwH/6JCRLRYSoJyoKuLE4WhI8fioTIrYB+8ddyPt42/xawt8ZMHpwvYTIGH1dO+teQd2FiGUoYKWkc2+RA2ZSwi6Mu1gIGLJ8LAFu2aPN9QMOjdues60EjfNqvZT34O2Q=",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"65e8eee0-4942-48c5-b0c9-1d8d8645e091\",\n  \"type\": \"Temperature\",\n  \"value\": \"30\",\n  \"read_at\": \"2018-02-01T15:58:34.000Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"2eb624cc649e385958e59dc64d112060\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "56283d97-d3a4-4b6c-8496-b796d786285d",
+        "X-Runtime": "0.032201",
+        "Content-Length": "116"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

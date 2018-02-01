@@ -1,0 +1,2 @@
+class Temperature < SensorReading
+end

@@ -1,0 +1,15 @@
+%table.table
+  %thead
+    %tr
+      %th Serial Number
+      %th Registration Date
+      %th Firmware Version
+      %th Sensor Readings
+  %tbody
+    - @devices.each do |device|
+      %tr
+        %td= device.serial_number
+        %td= device.created_at
+        %td= device.firmware_version
+        %td
+          %a{href: device_url(device)} View Device Details

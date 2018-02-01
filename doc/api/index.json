@@ -1,0 +1,120 @@
+{
+  "resources": [
+    {
+      "name": "Authentication",
+      "explanation": "  The API supports 2 methods of authentication.  Both forms are required to be encrypted by a keypair that is secret to this application.  Each device will contain its own public key to perform this encryption.  A sample key is available below\n\n  <pre>-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAy1etPIqxcuRD1Ey3U4HH\nO0PEQn5knFSEHafKJfra/S8rrprwiYdEd99dRQlczqq1G4qyltYs7qBaWe9mgdjo\n1DK/sE78F8pLPRspXky74p1FdrVTCalK/phfmZKJeasRpv+AgZyvEP/3Idl8IrWh\nn2F6WYo6GG66FdmSmclAVJ2CJqdSu1ld3e9L7A15IATTtp6L/uX6y+cUoXnqc5pZ\nElZ+UNdzN98apsGDpRIIHmEYf0T0YhTR8ZAO4OCI/haQhgU2pEWgWdk/yiraz/T8\n6obBfNeJPeIJG/DaxeftGlulM17KsNswfg8LMpfbto2fNX4ky3p+KWDM07CVqEe9\nFAqak1YYZEcfSuJ6q8cTC8bVBQfvDzWpmaWhBWixHQECEABUYC9cVu9xqurGLZfm\nDRK/a1XAXytmu18L3o9VVvV6kpvobnivZ1TNo+smdufX/z4pfD6MrbZxehWn0V8Q\nW5rXcIN0wGjACVwPPrfm/ofyxVmP45gqeXxyGW342hbU1QywAn5hOcs1eOzie1iS\n/X7qVuxR+M7VUUpyTRSP0KCWO7Ash4q5nN4uaY28RF8+8QyttaQoatUCvzTgXQ3V\nybhzNKs4M/ZVKA9S0cL65Kuv2BZyB2ipROnhw7vp/Jgreg+97kv6TP8HyTDJ/AXr\n26f3aTeXnqu9J7GWnSDEpvUCAwEAAQ==\n-----END PUBLIC KEY-----\n</pre>\n\n  The 2 valid authentication forms are Basic and Token and must be specified in the Authorization header.  To generate this header follow these steps:\n\n  1. If using Basic auth, combine the username and password: `username:password`\n  2. Using the public key, encrypt the token or string from step 1\n  3. Base64 encode the encrypted string from step 2\n  4. Specify `Basic` or `Token` at the beginning of the Authorization header and specify the string from step 3\n",
+      "examples": [
+        {
+          "description": "Authorizes with basic auth",
+          "link": "authentication/authorizes_with_basic_auth.json",
+          "groups": "all",
+          "route": "/api/users/current",
+          "method": "get"
+        },
+        {
+          "description": "Authorizes with token auth",
+          "link": "authentication/authorizes_with_token_auth.json",
+          "groups": "all",
+          "route": "/api/users/current",
+          "method": "get"
+        },
+        {
+          "description": "Returns 'invalid username or password' message",
+          "link": "authentication/returns_'invalid_username_or_password'_message.json",
+          "groups": "all",
+          "route": "/api/users/current",
+          "method": "get"
+        },
+        {
+          "description": "Returns 'no authorization header' message",
+          "link": "authentication/returns_'no_authorization_header'_message.json",
+          "groups": "all",
+          "route": "/api/users/current",
+          "method": "get"
+        },
+        {
+          "description": "Returns an 'invalid api key' message",
+          "link": "authentication/returns_an_'invalid_api_key'_message.json",
+          "groups": "all",
+          "route": "/api/users/current",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Devices",
+      "explanation": "The POST /devices endpoint is used by Smart AC units for registration.  A user and password are expected to be sent by the client",
+      "examples": [
+        {
+          "description": "Register a device",
+          "link": "devices/register_a_device.json",
+          "groups": "all",
+          "route": "/api/devices",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Sensor Readings",
+      "explanation": "Devices will use this endpoint to upload sensor data",
+      "examples": [
+        {
+          "description": "Creates a CoLevel sensor reading with value: 8",
+          "link": "sensor_readings/creates_a_colevel_sensor_reading_with_value:_8.json",
+          "groups": "all",
+          "route": "/api/sensor_readings",
+          "method": "post"
+        },
+        {
+          "description": "Creates a Humidity sensor reading with value: 40",
+          "link": "sensor_readings/creates_a_humidity_sensor_reading_with_value:_40.json",
+          "groups": "all",
+          "route": "/api/sensor_readings",
+          "method": "post"
+        },
+        {
+          "description": "Creates a Temperature sensor reading with value: 30",
+          "link": "sensor_readings/creates_a_temperature_sensor_reading_with_value:_30.json",
+          "groups": "all",
+          "route": "/api/sensor_readings",
+          "method": "post"
+        },
+        {
+          "description": "Creates a UnitHealth sensor reading with value: gas_leak",
+          "link": "sensor_readings/creates_a_unithealth_sensor_reading_with_value:_gas_leak.json",
+          "groups": "all",
+          "route": "/api/sensor_readings",
+          "method": "post"
+        },
+        {
+          "description": "Creates a UnitHealth sensor reading with value: healthy",
+          "link": "sensor_readings/creates_a_unithealth_sensor_reading_with_value:_healthy.json",
+          "groups": "all",
+          "route": "/api/sensor_readings",
+          "method": "post"
+        },
+        {
+          "description": "Creates a UnitHealth sensor reading with value: needs_new_filter",
+          "link": "sensor_readings/creates_a_unithealth_sensor_reading_with_value:_needs_new_filter.json",
+          "groups": "all",
+          "route": "/api/sensor_readings",
+          "method": "post"
+        },
+        {
+          "description": "Creates a UnitHealth sensor reading with value: needs_service",
+          "link": "sensor_readings/creates_a_unithealth_sensor_reading_with_value:_needs_service.json",
+          "groups": "all",
+          "route": "/api/sensor_readings",
+          "method": "post"
+        },
+        {
+          "description": "Uploads sensor data in bulk",
+          "link": "sensor_readings/uploads_sensor_data_in_bulk.json",
+          "groups": "all",
+          "route": "/api/sensor_readings/bulk_upload",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}

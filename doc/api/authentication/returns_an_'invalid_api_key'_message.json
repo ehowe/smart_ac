@@ -1,0 +1,44 @@
+{
+  "resource": "Authentication",
+  "resource_explanation": "  The API supports 2 methods of authentication.  Both forms are required to be encrypted by a keypair that is secret to this application.  Each device will contain its own public key to perform this encryption.  A sample key is available below\n\n  <pre>-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAy1etPIqxcuRD1Ey3U4HH\nO0PEQn5knFSEHafKJfra/S8rrprwiYdEd99dRQlczqq1G4qyltYs7qBaWe9mgdjo\n1DK/sE78F8pLPRspXky74p1FdrVTCalK/phfmZKJeasRpv+AgZyvEP/3Idl8IrWh\nn2F6WYo6GG66FdmSmclAVJ2CJqdSu1ld3e9L7A15IATTtp6L/uX6y+cUoXnqc5pZ\nElZ+UNdzN98apsGDpRIIHmEYf0T0YhTR8ZAO4OCI/haQhgU2pEWgWdk/yiraz/T8\n6obBfNeJPeIJG/DaxeftGlulM17KsNswfg8LMpfbto2fNX4ky3p+KWDM07CVqEe9\nFAqak1YYZEcfSuJ6q8cTC8bVBQfvDzWpmaWhBWixHQECEABUYC9cVu9xqurGLZfm\nDRK/a1XAXytmu18L3o9VVvV6kpvobnivZ1TNo+smdufX/z4pfD6MrbZxehWn0V8Q\nW5rXcIN0wGjACVwPPrfm/ofyxVmP45gqeXxyGW342hbU1QywAn5hOcs1eOzie1iS\n/X7qVuxR+M7VUUpyTRSP0KCWO7Ash4q5nN4uaY28RF8+8QyttaQoatUCvzTgXQ3V\nybhzNKs4M/ZVKA9S0cL65Kuv2BZyB2ipROnhw7vp/Jgreg+97kv6TP8HyTDJ/AXr\n26f3aTeXnqu9J7GWnSDEpvUCAwEAAQ==\n-----END PUBLIC KEY-----\n</pre>\n\n  The 2 valid authentication forms are Basic and Token and must be specified in the Authorization header.  To generate this header follow these steps:\n\n  1. If using Basic auth, combine the username and password: `username:password`\n  2. Using the public key, encrypt the token or string from step 1\n  3. Base64 encode the encrypted string from step 2\n  4. Specify `Basic` or `Token` at the beginning of the Authorization header and specify the string from step 3\n",
+  "http_method": "GET",
+  "route": "/api/users/current",
+  "description": "Returns an 'invalid api key' message",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/users/current",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token hVsVGMG8PqpYpiRZhHFuhTEIXBaPxb/54gROzC++PFLRbdgq1ksTQz22LmvNYTzU2w08KM+wkcTL2D6oYoXh93g4l3nZGtzYaMluc3qh3N57RELWzLBtvMB0Qoy6F3SOUlS6WsYbr85f7rc+pUX/n8UGzuSpLIOMQaOTfJWDzxxpKOu7NvxVyK/aJ34IsRqQLZdyvw/eH71Xkq9VLF/XfOq13B8vh2YYK6xsAn5Fkyt2KHIQr7gcOAIFdJ8Gx5XbX3XTFMvu4S8o5zMruIYyCQmW3kLDla+Sd4vHTp9SPVoH5clugtKFAoqs8PBQOLXB+DWBeQx0nq9jFYxxjdhsr4BBxrjSwhl3l1WDwoTxISxCnHvvXV7W/gQAbN8tRg7kPL5X4cBwhrin6WSNdMpmgOh8nMtspHxSRuqO4PppNuabb+l/uTsXw0Il5hu25PDSzQLey+KJMns8r98Er9njCwnb8sAWrqIG3mAMNoWVbP7VZFHbPWC9yb4G1ocdib1XnTy63XOws/teZSucJtyXRZui9zTk++vAt525tZxqQ7fNxR7exejr9cP7wIGKlcewox8bJARMZznX1tCscOvYMVspYbxTLGUDRjVMoa5tSaHhpx+zJfhKvPddA1k+6YJn5q/VICY1V0XtdlIZ3qscHv57ExtUtQHjtVa3Ws9fAaU=",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 401,
+      "response_status_text": "Unauthorized",
+      "response_body": "{\n  \"errors\": \"invalid api key\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "cf2863e9-c75a-4e13-a2b8-0c32da66f248",
+        "X-Runtime": "0.032558",
+        "Content-Length": "28"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

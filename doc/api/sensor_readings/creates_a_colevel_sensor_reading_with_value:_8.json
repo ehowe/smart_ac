@@ -1,0 +1,68 @@
+{
+  "resource": "Sensor Readings",
+  "resource_explanation": "Devices will use this endpoint to upload sensor data",
+  "http_method": "POST",
+  "route": "/api/sensor_readings",
+  "description": "Creates a CoLevel sensor reading with value: 8",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "type",
+      "description": "Sensor reading type.  Must be one of CoLevel, Humidity, Temperature, or UnitHealth"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "value",
+      "description": "Sensor value"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "read_at",
+      "description": "Timestamp of the sensor reading"
+    },
+    {
+      "required": true,
+      "name": "device",
+      "description": "Id of the device reporting the sensor reading"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/sensor_readings",
+      "request_body": "device=aedde3df-cdd5-4d00-96e2-bcaf9c5c0361&sensor_reading[type]=CoLevel&sensor_reading[value]=8&sensor_reading[read_at]=2018-02-01+10%3A58%3A34+-0500",
+      "request_headers": {
+        "Authorization": "Token yby9T7QMG1ILIXWMgk4HMa3U+j6Jc47WFK5O/etTXloNvIdO0wm3Re6O7GGEfDWq7w9xg8KF1Ps8xS3Ddx16VT3m+Umy9WtMKz8a4mWymlmRiGFLwzXI9+SzO7UMdjQSaK6oPkHOikFDgWBGviXElRneGVNuksTohdOx+xtFXS/y0W8lcNunPokGSUhhtnseN3Ap/dAWJR04dvIz8HpYh6iFXYZmnU4vawzKylsr1eGBozs1rvcx5hUxiWdXsd6B+TxfYy/avgYkSoo5UX+RXOf3x4qBtXJZ2/fguWTBQS3EAAZlgqEqGum3v7BfW13MF5CiLsBRD2VTw4BwUQvG0LwMnGiakEk/ZqXv1PU5qkjIxH03nBer1lVqxMeF1m5Q1NXP3BFrO01kV156gKe1SLPSXmqFPkdGYjGAEW0fiDXPKZEsPZF16aHYzcW7lybMOwdRC/kRgEqYebY1DshBfZfYO+50eduQKAlBNdcUo5g8N0Xx8HNqB6By6Yg8Whwskcwx2Vz3salzWd+vo2O2Pb++PyuZEHsmHqY8YEq1XnNykge1BogK9HNlYOgjqDrw1MmhZ56Dk48zgSuR+cygf1YTbW9+OtkH4I4WgqwxekZI6QT8us88agJEqRGnZPZk+Wmh+fBPE5ViIo1XbBASYN4Ch5X7FAfWd5BMQCaaVUM=",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"b971316a-9d15-4f0d-8036-841784e2005e\",\n  \"type\": \"CoLevel\",\n  \"value\": \"8\",\n  \"read_at\": \"2018-02-01T15:58:34.000Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"5cc6fcb78136865d9184a427a326da46\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "a2debf59-8e60-42d2-be61-bab990bf3cba",
+        "X-Runtime": "0.111938",
+        "Content-Length": "111"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "resource": "Sensor Readings",
+  "resource_explanation": "Devices will use this endpoint to upload sensor data",
+  "http_method": "POST",
+  "route": "/api/sensor_readings",
+  "description": "Creates a UnitHealth sensor reading with value: needs_new_filter",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "type",
+      "description": "Sensor reading type.  Must be one of CoLevel, Humidity, Temperature, or UnitHealth"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "value",
+      "description": "Sensor value"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "read_at",
+      "description": "Timestamp of the sensor reading"
+    },
+    {
+      "required": true,
+      "name": "device",
+      "description": "Id of the device reporting the sensor reading"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/sensor_readings",
+      "request_body": "device=96d3e31c-63f9-46d9-a3e2-4051ff6db288&sensor_reading[type]=UnitHealth&sensor_reading[value]=needs_new_filter&sensor_reading[read_at]=2018-02-01+10%3A58%3A34+-0500",
+      "request_headers": {
+        "Authorization": "Token m7g0/amxkd39aRrHyI66c6T1XtKF/PLHCxUY9z2BwOh1St4JFKWCO2luWh0+PD4w693EIcShN56Q+HmOCds/jLsQmjJZpsUGCM7XfzRDuAI1rYHAwQoE67hlbOiRM9UmPYBJ9btrOwtgbe8+IL3RIhuImDYwIa5YnzrlOBdIcsd1n0AyBbHMTqvD8iNkohi9LoLtvb28uGQ0EUVOVbUpaYBGKONHC/+7RCUPm8WnaxaGWKeGVk1O7+bEt2/oxmpkci26Eymmnjfq3/A5tFls6/qzGVcZX9IDuZjXQfNHRcHdDGYmsBykliBioQXGnujWGrrRQqumdvzWRkqwtL7SdqUdzOgCi699dM+wuFk0sHZvPyiaPMjvfXi9lZRvapkVffppbls96qhVMieD0oVDRNaHdSCJrbDouMy4Uu1J9loviU6uU6K5/iVi45jaBeweOf04oIdATmUpiVCwH2q/r//ecuyzdncQC7Ecm6TsyPpwynZrnnGCSIPYKdnBseSczinyc/IRBHapSiqadMnPH/qK03o1Phk8co762WNj+bLZGWOc6Zrp7jdjGFgIgERI9EFMDlJrxc22brZDZdTQvGhwo6gCyYzqQ58OdxvSJtWYe6WEQXvfuGhSgnY00mbOy+GLh3uBcZswi2j2Xq5SfVkeibfe5Mtg8R9KvCpyR7A=",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"df01af3f-dedb-44a1-a5f6-116b3bc45f9e\",\n  \"type\": \"UnitHealth\",\n  \"value\": \"needs_new_filter\",\n  \"read_at\": \"2018-02-01T15:58:34.000Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"36687756c82158192cd5df9da5ae5481\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "82ed5fb0-58e0-451f-a064-251a83955e12",
+        "X-Runtime": "0.030267",
+        "Content-Length": "129"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

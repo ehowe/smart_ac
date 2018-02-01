@@ -1,0 +1,57 @@
+{
+  "resource": "Devices",
+  "resource_explanation": "The POST /devices endpoint is used by Smart AC units for registration.  A user and password are expected to be sent by the client",
+  "http_method": "POST",
+  "route": "/api/devices",
+  "description": "Register a device",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "scope": "device",
+      "name": "serial_number",
+      "description": "Unit Serial Number"
+    },
+    {
+      "required": true,
+      "scope": "device",
+      "name": "firmware_version",
+      "description": "Unit Firmware Version"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/devices",
+      "request_body": "device[serial_number]=a68c2d82fc59dc39a097a9&device[firmware_version]=1.2",
+      "request_headers": {
+        "Authorization": "Basic nM6nVxjfLS7V3K/xOWE5hs/3K5sM/fmils7wfZTvPHHLhgfGIWbBOYWIn6ibS5wXASTLBMSv1F/swtdY4XLfreTazAxiKmOpjtuP6//FQHC6S1CI2lvaNMqrr8xSle6Z6t8zKPSRuAPVWa/M8GJRN0P4xe1FjbwQOss8wwFiMtNg+gJFof4lLr5aIOZ0T0HRaaZ5ufzhMCirzkrHA+1dzQr9xFQzPppRqrQpQUA3bCotSH8wRb41U9BtYZkQEsJ3qLyGtl//TNJLOahkTr0pK/OJGSRO+9zd0dsrZVPH9d3poamRdg+55FbGfTE7foB37+6uB6cK8hQ86lSjc1k74IARyN9goVrGcr3lESjLXQZLoqurMB4j7mCU2v9yof2tw/rMuQ3F0R+iv2ZL1L4oeOT9fqjs0T/hlCff9S/dn+2+5+BpG8Et942ULHMpNDL+unQhI+hPFSFlCHAA9s718/XWAPM1nUUVKPFRDs1yk5VlKPtEal1EdiVZtv8WscZ+WYPW1hLejKmOpXmxstEEEd/nTvZccBQuj53ZsWynzdlzVNOAIeIJGWp+6lIun9rrdC+Qvh7NlY/YvaQKJv1P3P3s9nZE4x/50uHdLTdpi70jpiRRvDOe33FuxB2yNeWC7tGT6OpAVndo0O/SjKWQ9bmgQRWRBTTuGollWl5v0Ns=",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"23d50abf-7fba-431e-bf4b-e629b513b642\",\n  \"firmware_version\": \"1.2\",\n  \"serial_number\": \"a68c2d82fc59dc39a097a9\",\n  \"api_key\": \"a1da201dc6766c0bea30d2819374e035\",\n  \"registered_at\": \"2018-02-01T15:58:34.108Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"53c8865c777767b3e80a34cf40fd2023\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "70260496-196e-420a-a326-c46552f7c7e3",
+        "X-Runtime": "0.061183",
+        "Content-Length": "199"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

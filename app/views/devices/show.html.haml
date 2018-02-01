@@ -1,0 +1,52 @@
+= content_tag(:div, nil, id: "recentStats", data: {stats: @recent_sensors})
+= content_tag(:div, nil, id: "allStats", data: {stats: []})
+= content_tag(:div, nil, id: "apiKey", data: {apikey: current_user.api_key})
+= content_tag(:div, nil, id: "deviceId", data: {deviceid: @device.id})
+.container
+  .row
+    .col.text-center
+      %h3 Details for #{@device.serial_number}
+  .row
+    .col-md-6.text-center
+      %strong Registration Date
+    .col-md-6.text-center
+      %strong Firmware Version
+  .row
+    .col-md-6.text-center= @device.created_at
+    .col-md-6.text-center= @device.firmware_version
+  .row.text-center
+    .col
+      %strong Most recent sensor readings
+  .row
+    .col.text-center
+      %button.btn.renderRecentGraph{data: {action: "temp"}} Temperature Graph
+      %button.btn.renderRecentGraph{data: {action: "co"}} Carbon Monoxide Graph
+      %button.btn.renderRecentGraph{data: {action: "humidity"}} Humidity Graph
+      %canvas{id: "mostRecent", length: "300px", height: "150px"}
+  .row
+    .col.text-center
+      %strong Search sensor data
+  .row
+    .col.text-center#sensorChoice
+      %strong Choose a sensor
+      %button.btn.chooseSensor.active{data: {action: "Temperature"}} Temperature
+      %button.btn.chooseSensor{data: {action: "Humidity"}} Humidity
+      %button.btn.chooseSensor{data: {action: "CoLevel"}} Carbon Monoxide
+      %button.btn.chooseSensor{data: {action: "UnitHealth"}} Unit Health
+      %button.btn.chooseSensor{data: {action: "all"}} All
+  .row
+    .col.text-center#sensorTime
+      %strong Choose a Timeframe
+      %button.btn.chooseTimeframe.active{data: {action: "today"}} Today
+      %button.btn.chooseTimeframe{data: {action: "this_week"}} This Week
+      %button.btn.chooseTimeframe{data: {action: "this_month"}} This Month
+      %button.btn.chooseTimeframe{data: {action: "this_year"}} This Year
+      %button.btn.chooseTimeframe{data: {action: "all"}} All
+  .row
+    .col
+      %table.table.table-striped.table-bordered.display#allStatsTable{width: "100%"}
+        %thead
+          %tr
+            %th#sensorType Sensor Type
+            %th#sensorValue Sensor Value
+            %th#sensorTime Sensor Date/Time

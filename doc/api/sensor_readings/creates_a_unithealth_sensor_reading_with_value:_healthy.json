@@ -1,0 +1,68 @@
+{
+  "resource": "Sensor Readings",
+  "resource_explanation": "Devices will use this endpoint to upload sensor data",
+  "http_method": "POST",
+  "route": "/api/sensor_readings",
+  "description": "Creates a UnitHealth sensor reading with value: healthy",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "type",
+      "description": "Sensor reading type.  Must be one of CoLevel, Humidity, Temperature, or UnitHealth"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "value",
+      "description": "Sensor value"
+    },
+    {
+      "required": true,
+      "scope": "sensor_reading",
+      "name": "read_at",
+      "description": "Timestamp of the sensor reading"
+    },
+    {
+      "required": true,
+      "name": "device",
+      "description": "Id of the device reporting the sensor reading"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/sensor_readings",
+      "request_body": "device=fbf68478-d4a1-4826-9700-9a9d3af3f8b7&sensor_reading[type]=UnitHealth&sensor_reading[value]=healthy&sensor_reading[read_at]=2018-02-01+10%3A58%3A34+-0500",
+      "request_headers": {
+        "Authorization": "Token lgVS/Fts3HK3Za0LHZLiKjn5XK3O0s/W5Tdu51Kbsm05pSF8kDUOr/AuYeciDDBuDBmXTmF/A/5y1MrjGu9OrXiouPfguiT6rYJG0rd+L/oj3RahHpWHLgW9lDUU1Cs5CQRfUmGiIxCwPg1eCWUPi6Wc338uBllauogBolZBRnMJaOzXKsLx3vYYsbJ0/DmhWbg/nBTxMpkEAWDNdUmkdLUS8/fswq4ek5jTt1U4FZaM+MWk5ozTOXhpYdr2ByQI7li1DPfGuAeaiY8T7vvkexDuK3pOPK8OikakAhjTUEe/vXEuOw6clnXBuZZPADEi7SQsho7hxvHlNkzj3JK6eab0DAnzTxKs5bJ5O2ns0dBBR7WM+AKRy+u/6lRlYGY0T62HJVaelIZa6u70znFJJbH6Hm8LMEjX4Otqm/xqwFQncILo+vAPkO0YS4zedCT/7dMIyIefkA6hr+Lf8rEevey/w7nxH/rXO0iWIPLymI0D7GVrOnIiRZpM6OwqlupArlXk9gmHyqEKtq7ULamfNiKp8RijyqamSsh4BGHXoEBzUa6B2CgdqYMReD73UxeU8Fl13zE5EEOSw7+ZB1/TiIwdeuZ0WzSZ/h8LA1keC7/GQjwDz7pi10Qb0+yd2PLCrFyXcj2t/SYBYpteCx/UYjSQyy27A0AhHXO3RO529yA=",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"a5aae2f3-9298-4cb1-8f2c-2534ecb58fe3\",\n  \"type\": \"UnitHealth\",\n  \"value\": \"healthy\",\n  \"read_at\": \"2018-02-01T15:58:34.000Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"c6b312e8dcd0fb70f61fd090b727116f\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "1a4fe1bd-c3a3-421b-a0c7-e6eba27792d3",
+        "X-Runtime": "0.042285",
+        "Content-Length": "120"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

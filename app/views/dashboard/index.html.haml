@@ -1,0 +1,24 @@
+.container
+  .row
+    .col.text-center
+      %h4 Items requiring attention
+  .row
+    .col.text-center Alerts
+  .row
+    .col.text-center
+      %table.table
+        %thead
+          %tr
+            %th Alert Type
+            %th Level
+            %th Alert Message
+            %th Age of Alert
+            %th Dismiss Alert
+        %tbody
+          - @alerts.each do |alert|
+            %tr{class: bootstrap_class_for_alerts(alert)}
+              %td= alert.type
+              %th= alert.severity
+              %td= alert.message
+              %td= distance_of_time_in_words(alert.created_at, Time.now)
+              %td= link_to "Dismiss", hide_alert_path(alert), method: :put
