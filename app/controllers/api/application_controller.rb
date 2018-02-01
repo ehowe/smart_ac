@@ -10,9 +10,14 @@ class API::ApplicationController < ApplicationController
     return render json: {"errors" => "no authorization header sent"}, status: 401 unless authorization_header
 
     auth_type, base64_encrypted_value = authorization_header.split
+
     encrypted_value = Base64.strict_decode64(base64_encrypted_value)
 
-    unencrypted_value = SmartAC.auth_key.private_decrypt(encrypted_value)
+    begin
+      unencrypted_value = SmartAC.auth_key.private_decrypt(encrypted_value)
+    rescue OpenSSL::PKey::RSAError
+      return render json: {"errors" => "there was a problem decrypting the header value"}, status: 401
+    end
 
     case auth_type
     when 'Token'

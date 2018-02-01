@@ -19,6 +19,13 @@
           "method": "get"
         },
         {
+          "description": "Returns 'decryption error' message",
+          "link": "authentication/returns_'decryption_error'_message.json",
+          "groups": "all",
+          "route": "/api/users/current",
+          "method": "get"
+        },
+        {
           "description": "Returns 'invalid username or password' message",
           "link": "authentication/returns_'invalid_username_or_password'_message.json",
           "groups": "all",
@@ -105,6 +112,20 @@
           "link": "sensor_readings/creates_a_unithealth_sensor_reading_with_value:_needs_service.json",
           "groups": "all",
           "route": "/api/sensor_readings",
+          "method": "post"
+        },
+        {
+          "description": "Returns an error if one of the sensor readings is invalid",
+          "link": "sensor_readings/returns_an_error_if_one_of_the_sensor_readings_is_invalid.json",
+          "groups": "all",
+          "route": "/api/sensor_readings/bulk_upload",
+          "method": "post"
+        },
+        {
+          "description": "Returns an error if there are more than 500 items specified",
+          "link": "sensor_readings/returns_an_error_if_there_are_more_than_500_items_specified.json",
+          "groups": "all",
+          "route": "/api/sensor_readings/bulk_upload",
           "method": "post"
         },
         {

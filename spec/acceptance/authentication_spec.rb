@@ -30,6 +30,17 @@ resource "Authentication" do
       end
     end
 
+    context "with an unencrypted header" do
+      let(:authorization_header) { "Basic #{Base64.strict_encode64('not_encrypted')}" }
+
+      example "Returns 'decryption error' message" do
+        do_request
+
+        expect(response_body).to match(/there was a problem decrypting the header value/)
+        expect(status).to eq(401)
+      end
+    end
+
     context "with bad basic authorization" do
       let(:authorization_header) { EncryptionHelper.new(resource: user, custom_string_to_encrypt: "not the password", auth_type: :basic).generate_header }
 

@@ -49,5 +49,29 @@ resource "Sensor Readings" do
       expect(status).to eq(201)
       expect(response_body).to match(/bulk upload complete/)
     end
+
+    example "Returns an error if there are more than 500 items specified" do
+      sensor_readings = Array.new(501) { {type: "UnitHealth", value: %w(healthy needs_service needs_new_filter gas_leak).sample, read_at: Time.now} }
+
+      expect {
+        do_request(sensor_readings: sensor_readings, device: device.id)
+      }.not_to change { SensorReading.count }
+
+      expect(status).to eq(400)
+      expect(response_body).to match(/bulk sensor upload is limited to 500 items/)
+    end
+
+    example "Returns an error if one of the sensor readings is invalid" do
+      sensor_readings = Array.new(500) { {type: "UnitHealth", value: %w(healthy needs_service needs_new_filter gas_leak).sample, read_at: Time.now} }
+
+      sensor_readings[100][:value] = nil
+
+      expect {
+        do_request(sensor_readings: sensor_readings, device: device.id)
+      }.not_to change { SensorReading.count }
+
+      expect(status).to eq(400)
+      expect(response_body).to match(/1 or more sensor readings are invalid/)
+    end
   end
 end

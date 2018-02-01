@@ -14,11 +14,11 @@ class API::SensorReadingsController < API::ApplicationController
 
   def bulk_upload
     if params[:sensor_readings].count > 500
-      return render json: {"errors" => "bulk sensor upload is limited to 500 characters"}
+      return render json: {"errors" => "bulk sensor upload is limited to 500 items"}, status: 400
     end
 
     if params[:sensor_readings].any? { |sr| sr[:value].nil? || sr[:type].nil? || sr[:read_at].nil? }
-      return render json: {"errors" => "1 or more sensor readings are invalid: cannot process bulk upload. all sensor readings require a value, type, and read_at"}
+      return render json: {"errors" => "1 or more sensor readings are invalid: cannot process bulk upload. all sensor readings require a value, type, and read_at"}, status: 400
     end
 
     SensorReading.bulk_insert do |worker|

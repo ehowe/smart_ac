@@ -37,9 +37,9 @@
     {
       "request_method": "POST",
       "request_path": "/api/sensor_readings",
-      "request_body": "device=3a3c974d-992b-4da2-b5b5-df632399a387&sensor_reading[type]=Humidity&sensor_reading[value]=40&sensor_reading[read_at]=2018-02-01+10%3A58%3A34+-0500",
+      "request_body": "device=afaf3f1d-08e8-470f-b2c8-dc4c2da6479f&sensor_reading[type]=Humidity&sensor_reading[value]=40&sensor_reading[read_at]=2018-02-01+11%3A47%3A36+-0500",
       "request_headers": {
-        "Authorization": "Token xxTSkSiMAWFEEkDu+D07Oq11Qbr58SZXj6mM9y4nCxO/+te40fP2sR319wguOhBFr2d1zKgWQsZFmQ/UAjaXl5MFKZ318GXuj7jpOIEovjEtOqD16H1lIOa6foJxLYsqsV33M05YpDBg9QqlByOQRk0JwPmALnMf0F0AZk2fO/r4ug3MowbZN+JV0si8PMh/WHxoZO+3y+j8aOlXlFU3W7QZDtgxN2uWwbLLQo9x9XlroURpMSXnIsSif6FAQmrpFvbIj2Nt/spXxEC2jrGOYLhYMzaXrkyuheky6ORnmxnbl63tM6Kr/ud9kHqNo2UgI+p3Pu+Hw9l/w8+XpUFkx9/08OQRb/WyMEf5ywSCQoe4FCVGhsZ49HOBkuCF4Q2IQA9LU2zMeEOvSNJb3SYfyzbD2a9w3hw7NywCw8E9lOBKfUZhpf3cV0BNrX9HAkuh6YdNKzOgDa5Cskvq4clHqlLgyl4HO77ZF5ijHOyWBUyPmSSuF3cqCNrV1Hz/dFjg4PtKMlUnJP/Esm9AmRPos3SrXYoY6tbDQJK+/7uqxjKtUvnskeTcl920t+gqxsVRYuET3RUeQZqYBiAd5mPCIRWt1LVIwot7s6KSVQoNMMmkirSzni4+Egla8//6AJUIco8Zh5Armc3lcM0BM6y0csKyqFMS53AueR9yte4Gu+E=",
+        "Authorization": "Token e0bJLeh2itNwyg1nEWmBj7d37A+xe1xhLc0ozxsFcPPfcm0yi22a9UcUiistwi32vUhHOLb259HQbtLLD6ANR04cdTjgFzSEFcuHKSWsCOH4sul8NxSV3eG86g4yILbkNJbl5iHoF7wpwcAGd1ySyrruhA32IfeRdxlIUhpPFYYG9gep6xt6wL4Iv1qViVdKkGRdgwx7njRSSORRYZE6UW4zoxzo0KuE3s/na0nQAepgbPM3u57PbQeLiea9zB2OrB2qM2jzHysdMbIslyo6TGspQez2FcXhGfD8p9/uAHZI/deTjQRcS5aVT9MY0fr4U7N1//W3EdVZLii0SW37VoBIrrukt8W05TGeLBOc9BQ1zZLc73mrYHOzSq6CdjJAeLncE7CVUGz+TyJb3vs8BIFwzBtNH1Rm3Y0aJUyL9yBDjjFMeMBqfybSyBBibDfSLm6Fk1kt6dq/jI5TRmC/M04EJ3els2zBZgIwDZa3X/R8zy7/oLfmA8I1oY8GhwPNsoxou5lWhlrs6MePehM65uHRJXD6IaAIxYh25lXF9cxHnA7XI9MenJK2bhFrJbhF1hEEQ9Tb9w9gkPcOP1TM9g7i+GtWy2lQkiBkMYy27Ou20YolB0SwN/iq0gEg3FXCGjDlWJ4E3prRWHkA1Hq7ZJfnbAHM1bsyyhDmtEL9poc=",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -49,16 +49,16 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"a3ecb6e0-2bfb-4694-9863-3932e04baf1c\",\n  \"type\": \"Humidity\",\n  \"value\": \"40\",\n  \"read_at\": \"2018-02-01T15:58:34.000Z\"\n}",
+      "response_body": "{\n  \"id\": \"02276544-a027-4c0c-9f0c-94bebbfd5d06\",\n  \"type\": \"Humidity\",\n  \"value\": \"40\",\n  \"read_at\": \"2018-02-01T16:47:36.000Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"f859a089861bd9c60704f1c44f8d6688\"",
+        "ETag": "W/\"a01a33bb6eafaac7ca24c7c038cdc076\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "b33347ae-b69b-4fed-91e0-8243d0f21e08",
-        "X-Runtime": "0.036079",
+        "X-Request-Id": "64a24e6b-51c7-4133-92e8-c7b41e83ef8e",
+        "X-Runtime": "0.033695",
         "Content-Length": "113"
       },
       "response_content_type": "application/json; charset=utf-8",
