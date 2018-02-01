@@ -46,7 +46,7 @@ class API::SensorReadingsController < API::ApplicationController
       when "0"
         order = "type "
       when "1"
-        if sensor == 'UnitHealth'
+        if %w(UnitHealth all).include?(sensor)
           order = "value "
         else
           order = "CAST(value as decimal) "
@@ -58,9 +58,11 @@ class API::SensorReadingsController < API::ApplicationController
       order << order_params["dir"]
     end
 
-    sensor_readings = device.sensor_readings.page((params[:start].to_i / params[:length].to_i) + 1).per(params[:length]).where(options).order(order)
+    page = (params[:start].to_i / params[:length].to_i) + 1
+    sensor_readings = device.sensor_readings.where(options).order(order)
+    filtered_sensor_readings = sensor_readings.page(page).per(params[:length].to_i)
 
-    response_data = {recordsTotal: sensor_readings.total_count, draw: params[:draw].to_i, data: sensor_readings.map { |s| [s.type, s.value, s.read_at] }}
+    response_data = {"recordsTotal" => sensor_readings.count, "recordsFiltered" => filtered_sensor_readings.total_count, draw: params[:draw].to_i, data: filtered_sensor_readings.map { |s| [s.type, s.value, s.read_at] }}
 
     render json: response_data
   end
