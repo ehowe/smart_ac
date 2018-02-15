@@ -37,9 +37,10 @@
     {
       "request_method": "POST",
       "request_path": "/api/sensor_readings",
-      "request_body": "device=090fe2fe-9753-4abd-8014-e8ee7f3550f1&sensor_reading[type]=UnitHealth&sensor_reading[value]=gas_leak&sensor_reading[read_at]=2018-02-01+11%3A47%3A36+-0500",
+      "request_body": "device=c4c62409-7838-4215-8969-9a2b617f4b51&sensor_reading[type]=UnitHealth&sensor_reading[value]=gas_leak&sensor_reading[read_at]=2018-02-15+11%3A59%3A54+-0500",
       "request_headers": {
-        "Authorization": "Token M1vwgdF3+jA5RGRiK3HNjcDyVd98Oj37MT8FmA/tEAR59Jq/Si7WDWtDnOxELcsmetqlcdZ2xp6E+5zQXJKFzsTV1v52JXTHB6voN7WLPCX2vgr2ki2hiMNWz3+Kdjz1mIkUK19SNCaWOZ2EhcNRG97rwb2GyN9F1X8No+V5tfXtPza01mBORCvSyB0YJ6qnFxquGZT3eP5KVZFY8EXQtUpUYnrtmqLhRtJT+vWeHm7R+64hYg0If+txW+y9o7f7lnqMkHO0M+UL63aTJZVaWBvEze9V5LCfVkMr1Y3QpvD8rrm+alslceZHW7wLku1F0E4M3vvgmpQcnHyHiy6+qgpSkbzu08diAlUQeVa7ZQZY6n0b2TOpZyxRbWY6HcA0pSSqOv3qMF0QVMag0dyfulWPI7qTQLJKfiPFBzYnr94tXrxQMV/x4HO9ilVySGHy/aeWdB159cve/jLDBIN2K3NQbwbIwkHSGOOeWuka7Jc0TdNBIoheCAcBNmmxdlPExkFLxg8TfTH7nmAgmsM1Tuo5rcsn+PC0RT0eZ0gvX6Lis+kX4t4TK7tlwDVnVq1CZCjlvQB8uI/Hn0bz3M47qVei0IsDER/TiDalfGpsJttAAHI6AiBXq7h2u2YS+ref1OBZjUqQ/hhKGkwmeQisu4yUGpcJZVpR6aF+iijhZPg=",
+        "Authorization": "Token rSoz7Qbw2oGyb5LvADyTbS/wCa/973lduMvQd2AFKZ4xIf3iLJlvXsb+t5ExGdo7EvbNbRNm9bxkyolHXN3lQ3eeYWv7DWftrG9w+JQlMrMep+Nl6HML/mhQ7Mnlr17KjtaP2G/S5o/Jy90Nj5r1CnAgiu5uSo9qoSsAGlw/mPoERTtgB4svfEs1UCS9ObloljxUgHc464cmdWgC73FnJxn1ZH7PHNghyMNi3CdVK1CU51wZuLh2cIR+gsdaMJSV1eddCBulxco0AGtwlYMecRyKKjnwI9zdqQ5WI37pqRrRSweiXVuq0H9HL0t+uTkOv8KhzJsfg5az3XQqthz9G+v8np8TwovR+Cl3/qUI9H3CXOyhs9FAEkrH2+ueB7CQ9xZ9Ru04BIsKfqy5mEy2dIiy5kWcK8+JOFtnZghQSQGwl6BTKh77iNccNwnhcM5uutsqHT79uPLSLknbdqUa5lVlcX2MoxS/7OHT0NYpQrvwOVticaUz+wcGjVZe4LlP/I4AWb9QPQFYgqddRW/Sqf0T3sJad6vsoXwigFljiupF7nDaI38l+8Cp4+Adlq58QOIoBMyHQvUJ6IZbq/Nd34kBc3kLGkoRuZ9kMCYl9W9yb91WZIsVo1nwIp4/pnDrbIn1QU+72hcIOqNExNQwZNxSbBMHHMw7cNdrDhahPkc=",
+        "Accept": "application/json",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -49,16 +50,16 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"b5bc33e1-53a4-47bb-b890-51bceb347c4f\",\n  \"type\": \"UnitHealth\",\n  \"value\": \"gas_leak\",\n  \"read_at\": \"2018-02-01T16:47:36.000Z\"\n}",
+      "response_body": "{\n  \"id\": \"e3355435-9a32-499c-bb56-fd20998b75ee\",\n  \"type\": \"UnitHealth\",\n  \"value\": \"gas_leak\",\n  \"read_at\": \"2018-02-15T16:59:54.000Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"2878d1966b07e16e9fd62a164dbe1d68\"",
+        "ETag": "W/\"a7e89be211202ffbf163f1e1db94f928\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "e683623f-d717-4a9e-a357-bcc109566b95",
-        "X-Runtime": "0.029027",
+        "X-Request-Id": "16b282c6-a01d-4c5b-bbac-963a218aa1c4",
+        "X-Runtime": "0.047308",
         "Content-Length": "121"
       },
       "response_content_type": "application/json; charset=utf-8",

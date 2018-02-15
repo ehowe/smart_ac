@@ -5,8 +5,10 @@ resource "Sensor Readings" do
   let(:user)        { create(:user) }
   let(:device)      { create(:device) }
   let(:auth_header) { EncryptionHelper.new(resource: device, auth_type: :token).generate_header }
+  let(:json_header) { "application/json" }
 
   header "Authorization", :auth_header
+  header "Accept", :json_header
 
   post "/api/sensor_readings" do
     explanation "Devices will use this endpoint to upload sensor data"

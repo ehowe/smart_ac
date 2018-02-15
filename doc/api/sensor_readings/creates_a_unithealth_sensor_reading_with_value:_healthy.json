@@ -37,9 +37,10 @@
     {
       "request_method": "POST",
       "request_path": "/api/sensor_readings",
-      "request_body": "device=f0c55f87-fc51-4892-a428-5b3a0c9694da&sensor_reading[type]=UnitHealth&sensor_reading[value]=healthy&sensor_reading[read_at]=2018-02-01+11%3A47%3A36+-0500",
+      "request_body": "device=7fc1a06d-4818-40ad-93b1-e7013396b59c&sensor_reading[type]=UnitHealth&sensor_reading[value]=healthy&sensor_reading[read_at]=2018-02-15+11%3A59%3A54+-0500",
       "request_headers": {
-        "Authorization": "Token YP2HQqspLqUQI90Gx0GzQZzSpj8SMxiA0QaZuGbD3TnsYILzi5DyEIu6I3dvV2+5YUONRNfhm5GnwyROpqGR3/U8kjWIuPkMko60YJDUVuSa5f/GpujPzqT+7ojVOewU+gUIHkJbT7rlvY4kTyzT4Jsm0YOgrRZdn3oHBiAaVKG/pjZvcvq6wcYRC5Fq1kW24PghElOMKv0cyJCwXr7MJ/X3gHPsZFQnHPAOc4A1jvyhkz76GzIabTs8qQpl4vicpKJkpl0ZRFwJHK6FDsD9PR5nrqmNBIa5pqfZQZ1GwLVQfRMU+NIy9W1DE6E8W/ypIz4d5Ve5wKK4dUGczjkmV7FDzJtn4OVnhUIfhD8XuHamhZ1iRaSsztED4ivr2iSIUre/ZbzmT7ciwQFBaJUYec0rD9EBlMtjXAoH6GtmKICKTPpNdsKHMmEagTyog3q02FH0EtOcU2/elX7A3FXfklawBgdXjAcMnDUJ3rREBh5/HxcG1grxGotVNWQztM/PW8akdKkX11wKRiFHC2E231InWl+C95rLwdAYm2/r3DfFjGp/3ZYsHJ6LvtEsiuVDnacR+kR/n9x1QY/+zGyAqHR1ZNbmo66vWUWKjcQqfR8jQKGQ/Xx1b9GDPN0DvTc3WJ6usCPydbwolQop5HIFoXVcsWsLJ9s95jGfNGPYAao=",
+        "Authorization": "Token O1W9YszYtLRw+myDFuKeRrtFEGgQua6GFkj8gkfjIS7HJ/5Jfg2PgqO5yoI/eXjahBvmurM+UFkehkY2tM/6c7hKB2wdLqTZUVCEZBl0kfH7i8ZHq+pJ/NczxmH6pqufSHObpNSbitn3kFSygO+F0jz55SmRH2sUoULg5p5GvYUCuJZvL3xcFVSXcsJJ7Xba+ZUjF5Sua2BZ6sekB8YOLXAgsZ7Io3nMKn+mzdHwdl2OrKfTrenQB2QjyyzW3877jbBpzZ4G32BtODUFcj3Gw7Za7n2geugHiKiXnYYRAW8xoQFfdn0gQ0KMXseKmgaKCoutf2el3LMYBw/fj/W+pMs5qnEF8dmqbKLutDFsWgq0dw0qBf2svRumn1/kOawQ0z30qCiziZ10jRqwp1z+fJmn9H7wkYHuk/rv709UTvXS7jSRGQxP1ZFnzLyatRuH5trfVSrg/5xnRiG207H0F4J8aJiv+/Xx8Of4d6rSwdj/5hlaK4rpCkloQzZg4kYUEwnc13bsr0AQ+X4uBtSGQZVImdIxZ46iV9R9eeg9HgtympbfqZhHdO3MX1x7ob6R4JADGJgjICFlCMpSMjtRpmcHVkOXKMb0D9LBVhSzDyVHbN6OctlDgSHPZZyVixmxzWYfF3ywc2X40LLuHKfF26Rjum0/IVzs2DdtwCgGC8Q=",
+        "Accept": "application/json",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -49,16 +50,16 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"a43d50a3-0d64-4d18-af16-11a7bb3f697f\",\n  \"type\": \"UnitHealth\",\n  \"value\": \"healthy\",\n  \"read_at\": \"2018-02-01T16:47:36.000Z\"\n}",
+      "response_body": "{\n  \"id\": \"c2dc8fdd-eb3d-4584-a330-9e130b7ca4d7\",\n  \"type\": \"UnitHealth\",\n  \"value\": \"healthy\",\n  \"read_at\": \"2018-02-15T16:59:54.000Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b368bd5d02085c08c17dc07a6ccc62a1\"",
+        "ETag": "W/\"e4fe68aaf9ab046495988bc327bbf00e\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "0f84cd28-96a4-4b35-83b9-f275a751884f",
-        "X-Runtime": "0.038179",
+        "X-Request-Id": "5055d8a8-97ef-4976-9ba0-499f28b240c9",
+        "X-Runtime": "0.031996",
         "Content-Length": "120"
       },
       "response_content_type": "application/json; charset=utf-8",

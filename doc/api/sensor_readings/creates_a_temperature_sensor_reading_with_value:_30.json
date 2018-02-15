@@ -37,9 +37,10 @@
     {
       "request_method": "POST",
       "request_path": "/api/sensor_readings",
-      "request_body": "device=994b49f3-8e94-4982-a4c2-f2f309bbd80c&sensor_reading[type]=Temperature&sensor_reading[value]=30&sensor_reading[read_at]=2018-02-01+11%3A47%3A36+-0500",
+      "request_body": "device=82a374c2-8427-4142-b84d-89cc78a91805&sensor_reading[type]=Temperature&sensor_reading[value]=30&sensor_reading[read_at]=2018-02-15+11%3A59%3A54+-0500",
       "request_headers": {
-        "Authorization": "Token S9j1KVLElMpnUQXqn/3yfyIHkV9HVBcgn3NCt15sgs63aih9zMjKsubzbgKjNLlW3MbBEc6tjm5r+p5H2psgmGVAHBsoKdM5I+QBU9AAbW+/ooBUhoAhqg6t2EiyA78VIAA+TDy0fsa5v8HhdxP5PM9Rd+66wnHBbdmw6Q3EUnfocm9wtH+nGqqC9RTV9W6510x0vbkBDopruleAOO77eG839m0omBuAdIniB0QacvgOnPNChLdsP/4o+n4COn/w8dLWDrimJquZAK4tuAk8vjiUgXVFoc3Td6Qf+nHz4cbQJ9mc0t6xzPlJJH2e9nOxsMhh9+Rur6ud9RIvIOX/bqqQIRdh1jEErcJ3J4k00k1ueUI5BEElXrKvF0uAm5NhrHL159dONCEyXtzkHTqtPFYAPfnFnmso4rNhhwY8LBb4lpMgkcFL/7Gx/T996dibdIb6M+Rt+rlMsW1kLTbK/EbhXG1TUHkE+3wdLJLivY9UMjWwSbZDIKdrsfUxy8fzYTCr3pSbK73mnLyeCXNWv0eXI9KClYacUtOPrmIAvmk4rCZNgBW09LO2ggE2PlfgKjfh6jnhWnvjcbNGnzHlaSmF7LMpC2jVWlfaL+CVnXUYRdPXA9nkV2/sg9alq1kNMspcv2FMpUv0sbryfVyT32JmF+1z2evSUhp73hCbBF8=",
+        "Authorization": "Token knVn8gEWg60HNsUa5MqYiGgf7Rzba4L3y9nLZDsNE7QJKAcaNzz4gfbFB+vLjYVMHNnOeuTmcQY/IwlqgnspGJBkAih7Wrg1p+wtKVisfRet107T8MrK3WEWi2muw7CJ3pzvcMd6TCH7hfQujjy87BxDV9PQzFfAqCGcmZ06AxlUAxpNuREJVtTe9CxyspnfGvMkCRhfLwxJXM6boiGP7QgDX1RzRj06DWjrI06h8TOvsEVMyNAt4zOsD9YNT4RJwfJsiH1p7uw6heq4cZWXcR/nX//8RdFmsJOTCYrXq4VZtqF9RzkSJEqYzN9KyRQL1aAxodW8w3y4w7mrMk7jmjvNkxQEuXZEvM4a8WtOCyrErKGnyW9ddfW2HbA5JbzOygzraD+CUEQleFivbYvjgo44ytWw1/MPxkGBgXtO4QGnNbvaAWO5DNjVE+AEu7C7AugYBt6qg6+Xz+Z2Xg4oohrfjgSGX8V3FL0tZKfOigJ6Q6veeJ3GP6LUeAfBJFfikiaFU7s9Pgr73D02ubhMSu55r8nEZSORl6liSKszrZ2MdSWBFhzNq+2PtclVaLO00bIV42Wltt3dXBSecWP0T+RKlDg9pe6w7vksYCJwbr8R/tMYeBSbzMBRch/rZ3JivC2Qw5vUN5rM5qcceWhTTXIysoPhH42zlujwA7SEiRA=",
+        "Accept": "application/json",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -49,16 +50,16 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"f42bef9a-618b-4b5d-a7dd-e13c213d4fd7\",\n  \"type\": \"Temperature\",\n  \"value\": \"30\",\n  \"read_at\": \"2018-02-01T16:47:36.000Z\"\n}",
+      "response_body": "{\n  \"id\": \"a2f68ce5-e92b-4b10-909d-7cb1e02a203b\",\n  \"type\": \"Temperature\",\n  \"value\": \"30\",\n  \"read_at\": \"2018-02-15T16:59:54.000Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"09792b300872ed2521189cfd18c119b2\"",
+        "ETag": "W/\"05572ad3afeff9ff3766f0d90cf43192\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "a6d80f51-70df-47ff-9c4a-5062b51bc7b5",
-        "X-Runtime": "0.031719",
+        "X-Request-Id": "bb52f29a-3270-4042-8431-02285db8bdcc",
+        "X-Runtime": "0.029304",
         "Content-Length": "116"
       },
       "response_content_type": "application/json; charset=utf-8",

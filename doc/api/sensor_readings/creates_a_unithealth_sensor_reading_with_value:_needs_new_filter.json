@@ -37,9 +37,10 @@
     {
       "request_method": "POST",
       "request_path": "/api/sensor_readings",
-      "request_body": "device=c0851b44-c967-4b59-a807-c7e0a434b37b&sensor_reading[type]=UnitHealth&sensor_reading[value]=needs_new_filter&sensor_reading[read_at]=2018-02-01+11%3A47%3A36+-0500",
+      "request_body": "device=da922c2f-09fa-4382-8125-d071c294194b&sensor_reading[type]=UnitHealth&sensor_reading[value]=needs_new_filter&sensor_reading[read_at]=2018-02-15+11%3A59%3A54+-0500",
       "request_headers": {
-        "Authorization": "Token qaSXYvzLp1dz9z9MGYvynfOjkXSbmtu5RYT8UsuIPXKLStgwDkPhsi7mJ+jHL1E/hq6yj8APGyMglDId7S92B7Z5Z5xyyX/vcyVqzP7/ajTT3hGccZRTM7gl8Uit2GXQbABTgOpWP6yRC0scAk15oNJ4kDVfHOeoDM0Cpcwrq1avvHxB6RX7d3wcsKoOM7XS0/FjMfNQoCwLvZhEwJlOCECIYruFzITDhp7028Hkfe5CwXvJAlgVifrDoX/XdqW5i6ztgx7QTlQCr24zKv17xLBsl3vEDM6EV4YtVCMq9ru0zxoR2Bh/ndCPuI+j1CV9yWqPEUcbDu7vwkKPskXdxa0daPMkM9/DWQdvv+I/C7w9CHbctgG6d3hPeoy63DwIyhBksz4bWda98iBHcG78ay5oLv0mCsy6atlTmg45Q+LoQ4kXHdai9817Rtu/lcCaxjMUzmeQIwHpSJ/CIH3L5GzlENFSOpb3AZPyeyr6sGz7cWDZgdi7Bm2gt8oYJUJrfPqei8j8pwEdKkXzL+x9s3j7eZ+ufh5ks1I/HzNl5DOxFqKjogX0NMHh3DAeBeUmf1IJC8jYk88rZOCzDM9JTqhdDEPkw10cCaAqXEFRZ9eFjq+lMIqraqKhMjaVLGUIWXWpMHuTsJrIQDUzvpmINq3mNA0Yenr0B3blsNvA6eg=",
+        "Authorization": "Token aaFIk/ColrlWnSdA5naaxvmns330WW+OtFameF/1FYVtfTI8o2b/l8jwzEaNMV6oHmsOeZ7H6mVPNzb7MyfMKZYMt91Fo4MXS6HSBiMqRW5U/YrruBNMNXd8dgUCOBHw7UwQA4oJJ2HZl907mjGqOGRMJ1ulS3IrFYAL01kjKOc6jBhOGQCYCu2BIZWahgGB76Hs2/ewIfo++KzPj19HrY79OJ5g9x+8zbPEXfbcbC4JSGMs/ORmdOTwtb7MwT1YenOmfV8NJPfaA4Yf/iNCWPIHZlF3WGFq44QgJm/CLm6EKlwsg6pnQsJVOm8jHo10LMtUI7vX6dxCO5OrtqHCyPdfD6zhHurfTLeV8pjrZB59kN6G988zCvGrjE2bQanCY0KoKRm7ArcYalXpUtJwa5gblsD/kFmbTVWUl6y9peNjJeItqNxmT3vw1QYNuFt2WQOqaFrWGr0JEijhDqyQbhV31Mn1TDpMRTM/YIBkzM2ITXqIFPyvCUzGe4rslLXFlGekYboWxgrgl4pnenRduvGzDI4i6aJVphVBROpGSj9SA7JjXa9EivIDVqWIRYSNxLcZ2pFB3/8CIRYqawDklVICiIZrBsJWdqHkUj7sWi8qBUrkIMHN2vGKvxGEpTiUuj/8xYjYrkpl5vDHk8tuFIROsT9cfyugtLzrKURBV+U=",
+        "Accept": "application/json",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -49,16 +50,16 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"2d372056-78ee-437b-805e-aaa1af9e0f64\",\n  \"type\": \"UnitHealth\",\n  \"value\": \"needs_new_filter\",\n  \"read_at\": \"2018-02-01T16:47:36.000Z\"\n}",
+      "response_body": "{\n  \"id\": \"3ab50fe3-9cbf-424c-8ac3-8a92fe912f78\",\n  \"type\": \"UnitHealth\",\n  \"value\": \"needs_new_filter\",\n  \"read_at\": \"2018-02-15T16:59:54.000Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"95613df2a344c595af2850d7a9c70919\"",
+        "ETag": "W/\"3ded84e3addb75b00791813bdeac258b\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "1e485bff-4b68-4707-a71a-e2a089c567a8",
-        "X-Runtime": "0.033633",
+        "X-Request-Id": "a9d755fd-d6ef-4bff-9935-5bd7362aed11",
+        "X-Runtime": "0.038836",
         "Content-Length": "129"
       },
       "response_content_type": "application/json; charset=utf-8",

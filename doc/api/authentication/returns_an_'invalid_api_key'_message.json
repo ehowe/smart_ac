@@ -17,7 +17,7 @@
       "request_path": "/api/users/current",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Token e7w79EU4A4pPcgHFVmH+07ZfCb9T9us9KN/PElWMz/VbmsdCuJp1fWGEuGfOdV4S9sndSh2+yRS7bPIX3D12ofWPcwA9OJYfgmbVMK1+7WIrSNYQNcOeXUnIr+gQc95T4zGI6pIr3zG4ggJ3gLPYWlBREVb/Pb8dBFmoBLj4asvuTDnbI9ASi0ljuQpPmxN3rjF1ctFik2/fbZaDitSEo7fs0RQVG+aXMGexYe7I31kY87SfVSrw+rTc8nD8vtvFQ6yNO47tlzBTxeQhIBgPbHlM6Lfrsfz7/oA2/9onKNO0XscFJ7VAjQV2uz+M+SYjhPgwuWFS8PvFC3elYd2eT6bBXQRd5EFmwd6VjumumUdKh1ZU8+2g7hNpDDl1USjDNlExOwYbPUB019mQ7GTwbzv1x0ABdX9ZPgXlMyr8V7OI+cI/bb/LyIO4v/f8scdTo6a6Jya9QpnBS8OWQLETmEjECzuwLpFvqqq9H9Sl9hUvTGfC1DygEHQgp6q5jwg9b8ZJXCXteRSk+yqrpi6rcaOhorCxLwoLCN4CJGeaOF7t6QypHGJImsg8GPEb5QheYxOZpVNuVeNA9+JjxzGnITglxbiqpUOee7MH9KEc4d/TUzwhOXmvw6Q7FN49KJu9iZiwPlfvYKljlakHNxbxTIsRRVGKdXcDgGLro288btM=",
+        "Authorization": "Token os3gQoFcvzuClNJ7xktTKI5wk6CGdWUgQ425STBR6K7SNFOlWjcX1hCanLie8COl1lwPjWJp0yNrJJoNXVfvZvI49zZn2KjFg3f2UkzQeScLVW09sMaQahOGyLQAWc78rNaJgGYI+gSv9FTUSgGeN7KQgAps/NOJEvwnkBW2AiCFwk9FYmNx5UDg5ObEYc52mLLWSs0SU55T5S/n5jPKLGldnO0bbUXP+vxjCGjeLDVRk+vTSM7v6mOAzRAYqER/9g8DZ/DuxPOdgB2wEee+lJ2yquQ1TbZqPWMOjSECWGzromL44YLWI/FBQFmo1zld+pr1pXZmkmMHZrFssMz4DuAG8UU2m38YEa7IymzAsMiqxxMQb45xxwB6qOYxtjzUk2mk4+YnJths6ij+lK/6/XBPWgoisC8RHQaRH7gaOn4q9SF/TJrMG/J42g9YINIdH/o27FMj7BX65J9Os9oCeyeaXhFvI3lSGE6CVrFDb568isyyTk5n/Uuv8fTSmM0OqwyWGYZLXnLKx72+eL+pUoX//kLf4uMaJt4sF/u+KHhTpW5oNL9gSUdzjdenUhpU1U7zUnD6wUCZU3tBcbBSPPp88LmeM2ErJkubQIHXAnuH9VJcO7oTC+b0SbMjWFCrweubSNZy+N5F4Lihx9BY2Bg9SkE9Vqn5fnd2hDqXCnw=",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -33,8 +33,8 @@
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "8b283e2e-8dd6-4f3b-ad3c-694debd98afb",
-        "X-Runtime": "0.030079",
+        "X-Request-Id": "60c9b346-7a0b-44c1-87e9-782775baed8f",
+        "X-Runtime": "0.025456",
         "Content-Length": "28"
       },
       "response_content_type": "application/json; charset=utf-8",

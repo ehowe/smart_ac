@@ -5,8 +5,10 @@ resource "Devices" do
   let(:user)          { create(:user) }
   let(:serial_number) { SecureRandom.hex(11) }
   let(:auth_header)   { EncryptionHelper.new(resource: user, auth_type: :basic).generate_header }
+  let(:json_header)   { "application/json" }
 
   header "Authorization", :auth_header
+  header "Accept", :json_header
 
   post "/api/devices" do
     explanation "The POST /devices endpoint is used by Smart AC units for registration.  A user and password are expected to be sent by the client"

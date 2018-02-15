@@ -17,7 +17,7 @@
       "request_path": "/api/users/current",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Token EpkIR9kxB9q7JMk8y++vm4ntU0GJ6nAlFvYwe2Caw/ojrmKa/wI4up1PTstj4/0v6S/fwVeQu6wvBz2L0ppQXLpWe7sFc6vrhjKaKOV4sWlNsb3xJ4WAOApL/BOQJSzQ0k3+4LkkiUJof6kSTboKWTcm+4AkbkDWu9pULCACia/+5VWkiBXSLHZma0+CGes9IjUIXlb8SFDj8uytgFp4VYWgbUMPWSD32lPqbkP1fHdFjAXwnYbMhBJn5D4JerjR5/Nj8H8EixPAFEMzsNuvuacmyGwvF5vS3hxjoOgDhLm9a4iFtWo3Yghy1WjXZxtFvzaGWafGkPME20bHLM4uilOk4EOzBs4hUaBGJDjzt40ZHoatTKw2i/ByUqI98ndZCr3X+bjCJTG0/mNnqFvRP6MC7BCb3w+3HY6BBmXB1jTvJYDeyeRiDf78fco+asZLJ/Ftmi48gggXtp8LL3SyvWc73vOkMpLeZtvxyyznlVG/R8w1Leo3z2UnBGaGhMAXsmg0zOfsYI7ld5E4jMOHaKXob2n2Act6thOKreZSBYl6dYAxaa62V4rcsI/oMuxM+LVW17xwq/avZp+nUtq2mHnni3qmje7n+mx1IQFzzqa878arRVQWH7rwVAuIdaHNaridMx1qRzikulUsrK6XDwIr5+CSAg1745x1HsCfIp8=",
+        "Authorization": "Token RuWE7jLb6LefuDg3hmxQjHCCCgv0TnIhbaeEWIOvR5uR4LQCgQ5YUc80QDnJMl3Vm2NFsBatB906xewlqW/RVWjMaGVUUAEBAiOBpIniRJ2FUxyg6hH0J3IO/zEXs6ZPA0T4mp8ABTzFaI8/K9jjOaibY9l+GOx64ldGAY5M4bzPT9Oxe9XN9CvFQGWYJDnT0TydE9mHsTGLQZOsdOWiHOVjDdTCgnBHUMU4yZI3fzqX4Il2cTokAtcUIzxFN7I76FQKt3s/wowbJxr6ljeVlayF5HbfqIx9kiCKErISfPVlgeu12sEy0Jw+bIpvtj/54ZtiVq2tm0AAVsE8nL815/h7F7wyYw0kSWTDkh3Swt6tyVHFru4bQOlfsjDGevf9iJ3O8lEsHIc2zMTF/Ojtgf1rWJPdoy3srh0Iue3maEHPJGdWHj68qHUfAJu+ELqNSffuHkL6O+kULGuzJwFLngW6uOQozVNuTkmfbZYbewcCE1WT0ZMOVwpxoNuDlko5J2vYoghA/Kf+mBU9ZaoU8s+FVgwALnC/mEi946gXWSPDBsRP8Dqs2yZFaMLxzMQ893tfANAEbB/A8FsERq2qxTl0bWRTTy8JemuoKJpsgn/9tRHv8qHHDUKArk8KCjeG3lFJDsUlz1l635j4/lVhIK/I1AhmskDWF/lhiWAsslQ=",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -26,16 +26,16 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"bbf90624-2987-44f6-8ff6-8d42f60b369d\",\n  \"email\": \"user@example.com\",\n  \"is_active\": true,\n  \"role\": \"admin\",\n  \"api_key\": \"ed4301fc8db8ca7da379345e19d4830a\"\n}",
+      "response_body": "{\n  \"id\": \"2e704fb6-5918-48b7-b741-811e9fa01014\",\n  \"email\": \"user@example.com\",\n  \"is_active\": true,\n  \"role\": \"admin\",\n  \"api_key\": \"daae110a3e0d3a2309a0653210800277\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"06a4b5e1a1cadff7e2c706aad23ae41e\"",
+        "ETag": "W/\"53bd132a2a76e8aa63d302b9b9ff723a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "93c3feba-eedd-48d9-a151-1a5c08795b72",
-        "X-Runtime": "0.012008",
+        "X-Request-Id": "884261bf-162b-4412-98fd-1e3dc4f24dc4",
+        "X-Runtime": "0.013591",
         "Content-Length": "149"
       },
       "response_content_type": "application/json; charset=utf-8",

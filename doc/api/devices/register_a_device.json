@@ -26,9 +26,10 @@
     {
       "request_method": "POST",
       "request_path": "/api/devices",
-      "request_body": "device[serial_number]=3f91bcad87aefc1f59d0f2&device[firmware_version]=1.2",
+      "request_body": "device[serial_number]=cfae35bfcaca1c89fba4c2&device[firmware_version]=1.2",
       "request_headers": {
-        "Authorization": "Basic S/5q/8Ol78yQi91N79WRuUQR9HktQ/mf49YPNaf/kuv5589X+D2DYGwy5p55lcxkTfM8nXdPfG+3MZt1ee55bYDxfupk/twjME3GJ9ax0x5V731uOcNguuIE6IxyKdBFJ7hZ4qjJPST+b3zPoJKiOl57UXYXI1k70w5UQJwm8M+kZOAPBXIo677BiF2+yyfAEPdnETx7/T/nHyAvyLRfhxzV3hoV360ukVxPvfhk1USh8J4cmwKyuMb/L67MGRv8u54mUqHEjD0YViq1141kOAowyrl5kKlX9vFU4B2k2/mgn/sgzsAxEj9iz+U/8OZmnFTD5MwlUgWVV3NqJp3EtxHVHvTA6HxwtdHXT7OzniXAXVbMQs9l1L+F9qRsOLvm7rTIrZuSxFd6osKodI1L1cfTip5G9v/BF1goJKajCg3ZhFiuZiT+VvRYYlcutH/GAEuwdSbSKntRB0xxU3s683d5CIBDGDwEpCjnC5Uw8Ag1Ym7YdskMgwOrAnJ3HDQVM11Q1hdaHaXAa2YrEt9w+dJyR5aRLkCEx1r4R2sxPsO0YcEApWdqZFubWtaqxeby9bTM7IwIvxH3DfTJpFnXLb5mv0CgI7t8hNlLmRhkFxxyKB8mqVCGhlhSOKSH4B0E+BlAEc2lcUPxEzwB7Tr/IeBmOWxn8QzDPgnQZe38If8=",
+        "Authorization": "Basic k2kCL61kzDMdUqoJjv55nUuv4QKdZ4+ogihMwCQKfibA2q+77NrUseUMc74yFYit2xCmfEc7R/laLORug5Hi5eR605Hmc/fBTcfqxxTR7y2UIiWhKKePe5Xst4pVzRzXDpE6aYlLFgRpiPrC1ub+r25avzUtebGzKCgE7LjR8BHJz0Uoa1IwMnNGUVIXxaNS+qQvRXZbm/r68ab5urPnB9o9Pttcc0boApCRZ9wanU8V0yS75k4xbL35nDPCDvxsBFGtTT61IDFvIQyNvMHLdyuSE7tERQf4VX4EvSaXQAYRNKtdDZxC0Oob8lVkVh2FU4XKd2SlK15htXG3pESkjmBTs/Oo1lKKr3wvn47LuG8fdP87xmFz3OmY7wE0ieaCfD7o4gPJDeDVPPfKQvCCTK2E7KFS+AUFJEY7Kmp+7VeO7v4XVnXL41c5Rmqu2Ssh4Jq036G5LZm2Z8H5jAkwSyRdfptnHq2qnUtzqIjRZh9kHJJLM5pkKtH2V4YcHUUrtOYO8Nf3VAkCyIf2UJ7RDyqZczVv2hW+DqtU4AwiBbnq7rlh0+fMk5rWOUn/J9vIHYkQbUrbVj5YMnsPg8MXZzAyYxPyD9CFVOnUthCEPuihVp6Bl7HSs18X7z3lf/SWLL43kB4AO1+WsyTVFdpNqTjnlBaNBAs2b4wv0MUAFPI=",
+        "Accept": "application/json",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -38,16 +39,16 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"51ed6ed1-7418-45f4-8d24-764125b61a55\",\n  \"firmware_version\": \"1.2\",\n  \"serial_number\": \"3f91bcad87aefc1f59d0f2\",\n  \"api_key\": \"bc699a840e777eb9e27859b095d01aa5\",\n  \"registered_at\": \"2018-02-01T16:47:36.179Z\"\n}",
+      "response_body": "{\n  \"id\": \"30a6a5cd-d786-4f8c-8134-a8f741da51b7\",\n  \"firmware_version\": \"1.2\",\n  \"serial_number\": \"cfae35bfcaca1c89fba4c2\",\n  \"api_key\": \"e7397c586fba43d2df2d269a27976881\",\n  \"registered_at\": \"2018-02-15T16:59:54.339Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"6a423d98c18f229ad4fce750416736ce\"",
+        "ETag": "W/\"4f5231519d6d7ef8fb33dd552e61d6c7\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "e0c39cd3-2013-44fb-811a-7eec60a0bc0a",
-        "X-Runtime": "0.064369",
+        "X-Request-Id": "4aa5c2a6-bfaf-46aa-aa84-1560dbcf27a5",
+        "X-Runtime": "0.059789",
         "Content-Length": "199"
       },
       "response_content_type": "application/json; charset=utf-8",
