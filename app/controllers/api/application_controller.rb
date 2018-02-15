@@ -1,4 +1,5 @@
 class API::ApplicationController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :encrypted_api_authentication
   respond_to :json
 
